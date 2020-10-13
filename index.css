@@ -1,0 +1,234 @@
+body{
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+.logo img{
+    width: 150px;
+}
+.container{
+    width: 100%;
+    max-width: 1200px;
+    margin:  0 auto;
+}
+.header{
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 1px #ccc;
+   width: 100%;
+
+}
+.inner_header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60px;
+}
+/* LOGO */
+.logo{
+    font-size: 24pt;
+    font-style: italic;
+    font-weight: 700;
+    color: rgb(255, 63, 85);
+    font-family: 'Commissioner', sans-serif;;
+}
+input{
+    border: none;
+    width: 500px;
+    height: 30px;
+
+
+}
+input::placeholder{
+    font-size: 15pt;
+}
+
+
+input:focus,input::before{
+    outline:none;
+    
+    
+}
+/* Icons */
+
+.icons{
+    width: 100%;
+    max-width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+}
+.sell_product {
+    border: 1px solid rgb(255, 63, 85);
+    background-color:  rgb(255, 63, 85);
+    border-radius: 15px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    width: 100px;
+    color: white;
+    padding: 5px;
+}
+.text{
+    margin-left: 5px;
+}
+
+.user_avatar{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: hotpink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15pt;
+    font-weight: 300;
+    color: white;
+}
+.notification{
+    margin-top: 10px;
+}
+.circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    position: relative;
+    bottom: 28px;
+    left: 17px;
+    border: 0.5px solid white;
+    
+}
+.intro_inner{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+.intro{
+    margin-top: 15px;
+}
+.intro_image{
+    width: 450px;
+    height: 480px;
+    background-image: url('./images/trio_party.svg');
+}
+.intro_written_text{
+    display: flex;
+
+    line-height: 1.2;
+    font-size: 32pt;
+   
+    margin-bottom: 5px;
+}
+.intro_text{
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+}
+.intro_input{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    font-size: 20pt;
+    margin-top: 10px;
+}
+.categories{
+    margin: 10px 0;
+}
+.categories_text{
+    font-size: 18pt;
+    font-weight: 600;
+}
+.category_list{
+max-width: 100%;    
+margin-top: 10px;
+display: flex;
+justify-content: flex-start;
+flex-direction: row;
+overflow-y: auto;
+
+}
+.category_list::-webkit-scrollbar{
+    width: 0;
+}
+.category_list_item{
+    
+    max-height: 210px;
+    justify-content: space-between;
+    margin: 10px;
+    
+}
+.card_item{
+    min-height: 170px;
+    min-width: 130px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.category_name{
+    text-align: center;
+
+}
+.filters{
+    margin-top:15px;
+}
+.filter_inner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.custom-select{
+    display: flex;
+    flex-direction: column;
+}
+select{
+    border: none;
+}
+.product_image img{
+    width: 250px;
+    height: 200px;
+
+}
+.products_inner{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    justify-content: space-between;
+}
+.products_title{
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 18pt;
+}
+.product_name{
+    font-weight: 300;
+   
+}
+.product_price{
+    font-size: 10pt;
+    color: grey;
+    margin-top: 3px;
+}
